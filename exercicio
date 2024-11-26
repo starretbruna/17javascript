@@ -1,0 +1,246 @@
+1:
+function verificarNumero(numero) {
+    if (numero > 0) {
+        console.log("O número é positivo.");
+    } else if (numero < 0) {
+        console.log("O número é negativo.");
+    } else {
+        console.log("O número é zero.");
+    }
+}
+
+2:
+function verificarParOuImpar(numero) {
+    if (numero % 2 === 0) {
+        console.log("O número é par.");
+    } else {
+        console.log("O número é ímpar.");
+    }
+}
+
+3:
+function classificarNota(nota) {
+    if (nota >= 9) {
+        console.log("Nota A");
+    } else if (nota === 8) {
+        console.log("Nota B");
+    } else if (nota === 7) {
+        console.log("Nota C");
+    } else if (nota === 6) {
+        console.log("Nota D");
+    } else if (nota <= 5) {
+        console.log("Nota F");
+    } else {
+        console.log("Nota inválida! A nota deve estar entre 0 e 10.");
+    }
+}
+classificarNota(10);  
+classificarNota(8);   
+classificarNota(7);   
+classificarNota(6);    
+classificarNota(4);    
+classificarNota(11);
+
+
+4:
+function verificarAnoBissexto(ano) {
+    if ((ano % 4 === 0 && ano % 100 !== 0) || (ano % 400 === 0)) {
+        console.log(ano + " é um ano bissexto.");
+    } else {
+        console.log(ano + " não é um ano bissexto.");
+    }
+}
+
+5:
+function verificarNumeroEntre10e20(numero) {
+    if (numero >= 10 && numero <= 20) {
+        console.log("O número " + numero + " está entre 10 e 20.");
+    } else {
+        console.log("O número " + numero + " NÃO está entre 10 e 20.");
+    }
+}
+
+
+verificarNumeroEntre10e20(19);
+verificarNumeroEntre10e20(7);  
+
+6:
+function maiorNumero() {
+    let numero1 = parseFloat(prompt("Digite o primeiro número:"));
+    let numero2 = parseFloat(prompt("Digite o segundo número:"));
+    if (numero1 > numero2) {
+        console.log("O maior número é: " + numero1);
+    } else if (numero2 > numero1) {
+        console.log("O maior número é: " + numero2);
+    } else {
+        console.log("Os dois números são iguais.");
+    }
+}
+
+maiorNumero();
+
+7:
+function verificarVogalOuConsoante() {
+  
+    let caractere = prompt("Digite um caractere:");
+
+    caractere = caractere.toLowerCase();
+
+    if (caractere.length === 1 && /[a-z]/.test(caractere)) {  // Verifica se é uma letra
+        if (caractere === 'a' || caractere === 'e' || caractere === 'i' || caractere === 'o' || caractere === 'u') {
+            console.log(caractere + " é uma vogal.");
+        } else {
+            console.log(caractere + " é uma consoante.");
+        }
+    } else {
+        console.log("Por favor, digite um único caractere alfabético.");
+    }
+}
+verificarVogalOuConsoante();
+
+8:
+var numero = parseInt(prompt("Digite um número:"));
+
+if (numero % 5 == 0) {
+    document.write(numero + "  é múltiplo de 5.")}
+    else if( numero % 3 ==0){
+      document.write(numero+ "  é multiplo de 3")
+    }
+    else{
+      document.write("insira um numero correto")
+    }
+
+
+9:
+var tempo = parseInt(prompt("Digite a hora"))
+if(tempo>=5 && tempo<12){
+  document.write("é de manhã")
+}
+else if(tempo>=12 && tempo<=17){
+  document.write("é de tarde")
+}
+else if(tempo>=18 && tempo<=23){
+  document.write("é de noite")
+}
+else{
+  document.write("nao se encaixa nos horarios")
+}
+
+10:
+var idade = parseInt(prompt("Digite a sua idade"))
+
+if(idade >= 18){
+  document.write("É de maior")
+}
+else{document.write("é de menor")}
+
+11:
+var dia = parseInt(prompt("Digite dia"))
+
+switch (dia){
+  case 0: {document.write("domingo")}
+  break;
+case 1:{document.write("segunda")}
+break;
+case 2:{document.write("terça")}
+break;
+case 3:{document.write("quarta")}
+break;
+case 4:{document.write("quinta")}
+break;
+case 5:{document.write("sexta")}
+break;
+case 6:{document.write("sabado")}
+break;
+default: document.write("digite de 0 a 6");
+}
+
+12:
+
+var fruta = parseInt(prompt("Digite um numero"))
+
+switch (fruta){
+  case 0: {document.write("maça")}
+  break;
+case 1:{document.write("banana")}
+break;
+case 2:{document.write("laranja")}
+break;
+case 3:{document.write("limão")}
+break;
+case 4:{document.write("morango")}
+break;
+case 5:{document.write("melancia")}
+break;
+case 6:{document.write("maracuja")}
+break;
+default: document.write("digite de 0 a 6");
+}
+
+13:
+let numero = 15; 
+
+if (numero >= 10 && numero <= 20) {
+    console.log("O número está entre 10 e 20.");
+} else {
+    console.log("O número não está entre 10 e 20.");
+}
+
+14:
+function verificarIdadeParaVotacao() {
+    let idade = parseInt(prompt("Digite a sua idade:"));
+
+    let resultado = (idade >= 18) ? "Você pode votar." : "Você não pode votar.";
+    console.log(resultado);
+}
+verificarIdadeParaVotacao();
+
+15:
+let idade = 10; 
+
+if (idade < 12 || idade >= 65) {
+    console.log("A pessoa é criança ou idosa.");
+} else {
+    console.log("A pessoa não é criança nem idosa.");
+}
+
+16:
+let mes = 3; 
+
+switch (mes) {
+    case 12:
+    case 1:
+    case 2:
+        console.log("É verão.");
+        break;
+    case 3:
+    case 4:
+    case 5:
+        console.log("É outono.");
+        break;
+    case 6:
+    case 7:
+    case 8:
+        console.log("É inverno.");
+        break;
+    case 9:
+    case 10:
+    case 11:
+        console.log("É primavera.");
+        break;
+    default:
+        console.log("Mês inválido. Por favor, insira um número de 1 a 12.");
+}
+
+
+17:
+let nota = 8; 
+let classificacao = 
+    (nota >= 9) ? "A" :
+    (nota === 8) ? "B" :
+    (nota === 7) ? "C" :
+    (nota === 6) ? "D" :
+    (nota <= 5) ? "F" :
+    "Nota inválida"; 
+
+console.log(`A classificação da nota ${nota} é: ${classificacao}`);
